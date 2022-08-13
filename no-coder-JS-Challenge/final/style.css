@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+button {
+  font-size: 20px;
+}
+h2 {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+h1 {
+  z-index: 1;
+  position: relative;
+}
+form {
+  z-index: 1;
+  position: relative;
+}
+img {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat; /* background-image가 컨테이너를 가득 채우지 못할 경우에도 반복하지 않는다.*/
+  object-fit: cover; /*사이즈가 container에 맞지 않아도 꽉 차도록 채운다.*/
+  background-position: center; /* background-image가 컨테이너에 가운데로 오도록 한다. */
+}
+.hidden {
+  display: none;
+}
