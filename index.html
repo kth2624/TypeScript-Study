@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>JS Challenge Final</title>
+  </head>
+  <body>
+    <section class="top-background" id="section">
+      <section id="weather-section">
+        <div id="weather">
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section id="main-section">
+        <div id="clock">00:00:00</div>
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="당신의 이름을 알려주세요?"
+          />
+          <input type="submit" value="Log In" />
+        </form>
+        <div class="hidden" id="greeting"></div>
+      </section>
+      <section id="todo-section">
+        <div>
+          <form id="todo-form">
+            <input type="text" placeholder="당신의 할 일" required />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+      </section>
+    </section>
+    <div>
+      <a href="https://kr.freepik.com/photos/watercolor"
+        >배경화면은 rawpixel.com - kr.freepik.com가 제작함</a
+      >
+    </div>
+  </body>
+  <script src="./js/clock.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/todolist.js"></script>
+</html>
