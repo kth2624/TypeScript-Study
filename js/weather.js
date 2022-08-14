@@ -1,5 +1,6 @@
-const weather = document.querySelector("#weather div:first-child");
-const city = document.querySelector("#weather div:last-child");
+const weather = document.querySelector("#weather :nth-child(1)");
+const temperature = document.querySelector("#weather :nth-child(2)");
+const city = document.querySelector("#weather :nth-child(3)");
 const API_KEY = "4f2dd5bac831776540973f87ea282e42";
 
 function onGeoOk(position) {
@@ -10,8 +11,9 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      city.innerText = `당신의 위치는 ${data.name}`;
-      weather.innerText = `날씨 ${data.weather[0].main}  기온 - ${data.main.temp}`;
+      city.innerText = `위치 ${data.name}`;
+      weather.innerText = `날씨 ${data.weather[0].main}`;
+      temperature.innerText = `기온 ${data.main.temp}`;
     });
 }
 function onGeoError() {

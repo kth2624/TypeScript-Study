@@ -19,16 +19,13 @@ form {
 ul {
   all: unset;
   font-size: 20px;
-  list-style-type: decimal;
+  list-style: decimal;
 }
 
 li {
   all: unset;
   display: block;
-}
-
-li::marker {
-  
+  margin-top: 5px;
 }
 
 img {
@@ -45,8 +42,11 @@ img {
 
 input {
   all: unset;
+  padding: 3px 5px 2px 5px;
+  border: #545454 2px solid;
+  margin-bottom: 10px;
+  font-size: 18px;
 }
-
 
 .hidden {
   display: none;
@@ -55,6 +55,7 @@ input {
 #weather {
   z-index: 2;
   position: relative;
+  font-size: 24px;
 }
 
 #section {
@@ -101,4 +102,15 @@ input {
 .top-background {
   z-index: 1;
   position: relative;
+}
+
+#background-source {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 10px;
+}
+
+a {
+  color: #ffffff;
 }
